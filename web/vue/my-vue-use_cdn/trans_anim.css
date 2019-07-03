@@ -1,0 +1,8 @@
+/* フェードイン、フェードアウトの定義 */
+.v-enter-active, .v-leave-active {
+    transition: opacity 2s;
+}
+
+.v-enter, .v-leave-to {
+    opacity: 0;
+}

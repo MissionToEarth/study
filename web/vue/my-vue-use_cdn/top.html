@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <meta name=viewport content="width=device-width,initial-scale=1">
+        <title>my-vue-app</title>
+        <!-- トランジションとアニメーションのCSS -->
+        <link rel="stylesheet" type="text/css" href="trans_anim.css">
+    </head>
+
+    <body>
+        <!-- app div -->
+        <div id=app>
+            <p>{{ menu_title }}</p>
+            <ol>
+                <li v-for="item in list">{{ item }}</li>
+            </ol>
+            <div  >
+            <ol v-if="toggle">
+                <li  v-for="item in list">{{ item }}</li>
+            </ol>
+            </div>
+            <!-- <div v-else>
+                <p>toggle is false.</p>
+            </div> -->
+
+            <p>ABCD</p>
+            <button v-on:click='toggle = !toggle'>Click01</button>
+            <p>{{ message }}</p>
+            <input v-model="message">
+            <button v-on:click='TAパラ切り替えスイッチ = !TAパラ切り替えスイッチ'>トランジション＆アニメーション切り替え</button>
+            <transition>
+                <p v-if="TAパラ切り替えスイッチ">TRANSITION & ANIMATION（CSSによる）</p>
+            </transition>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
