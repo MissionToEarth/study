@@ -12,14 +12,15 @@
 import HelloWorld from './components/HelloWorld'
 
 export default {
-  name: 'dApp',
+  name: 'app',
   components: {
     HelloWorld
   },
   methods: {
     onClick: function(event){
-      alert(event.target)
-    }
+      console.error(event.target)
+    },
+
   }
   
 }
