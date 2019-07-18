@@ -19,6 +19,9 @@ export default {
   methods: {
     onClick: function(event){
       console.error(event.target)
+
+      console.log( 0 )
+      console.log( this.$store.state.count )
     },
 
   }

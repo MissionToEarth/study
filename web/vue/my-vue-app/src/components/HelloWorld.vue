@@ -85,8 +85,6 @@
 </template>
 
 <script>
-import title from '../Title.js'
-
 export default {
   name: 'HelloWorld',
   data () {
