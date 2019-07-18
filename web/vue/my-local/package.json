@@ -1,0 +1,17 @@
+{
+  "name": "my-local",
+  "version": "1.0.0",
+  "description": "このパッケージはテストです",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@vue/cli-service-global": "^3.9.2",
+    "typescript": "^3.5.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "vue serve": "vue serve"
+  },
+  "author": "",
+  "license": "ISC"
+}
