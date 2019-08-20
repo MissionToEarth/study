@@ -6,11 +6,13 @@
   "dependencies": {},
   "devDependencies": {
     "@vue/cli-service-global": "^3.9.2",
+    "ts-loader": "^6.0.4",
     "typescript": "^3.5.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "vue serve": "vue serve"
+    "vue serve": "vue serve",
+    "tsc": "tsc"
   },
   "author": "",
   "license": "ISC"

@@ -11,6 +11,11 @@
     <body>
         <!-- app div -->
         <div id=app>
+                <input v-on:keyup.enter="submit">
+                <input v-on:keyup.page-down="onPageDown">
+                <div @click.alt="doSomething">[ Do something ]</div>
+                <p>{{ key_input }}</p>
+
             <p>{{ menu_title }}</p>
             <ol>
                 <li v-for="item in list">{{ item }}</li>
@@ -26,6 +31,8 @@
 
             <p>ABCD</p>
             <button v-on:click='toggle = !toggle'>Click01</button>
+            <button v-on:click='onButton'>Click01</button>
+            
             <p>{{ message }}</p>
             <input v-model="message">
             <button v-on:click='TAパラ切り替えスイッチ = !TAパラ切り替えスイッチ'>トランジション＆アニメーション切り替え</button>
