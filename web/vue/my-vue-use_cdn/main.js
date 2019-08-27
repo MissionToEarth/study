@@ -9,7 +9,7 @@ var first_root_app = new Vue ({
         toggle: true,
         message: "init",
         TAパラ切り替えスイッチ: true,   //ソースコードにUTF-8が使えるんだぜ。使うぜ。先頭文字にascii文字を付けるのは命名規則としてありかもしれない。
-        key_input: "k-e-y",
+        キーボード入力値: "k-e-y",
     },
 
     //監視するぞい
@@ -23,7 +23,7 @@ var first_root_app = new Vue ({
 
         document.onkeydown = e => {
     
-            this.key_input = e.key.toString();
+            this.キーボード入力値 = e.key.toString();
 
           // cmd + s は 動く
           if (e.key === 'S' && e.shiftKey) {
@@ -50,7 +50,7 @@ var first_root_app = new Vue ({
         },
         doSomething: function(event){
             alert("do something")
-            this.key_input="do"
+            this.キーボード入力値="do"
         }
     }
 })
