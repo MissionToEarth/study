@@ -1,3 +1,18 @@
+// 非同期コンポーネント
+Vue.component('async-example', function (resolve, reject) {
+    setTimeout(function () {
+      // resolve()コールバックにコンポーネント定義を渡します
+      resolve({
+        //コンポーネント定義
+        template: '<div>I am async!</div>'
+      })
+    }, 1000)
+});
+
+
+/* 
+    Vur ルート
+ */
 var first_root_app = new Vue ({
     // id=appの部分に対応する。
     el: "#app",
