@@ -1,0 +1,28 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "5.3",
+	"Category": "",
+	"Description": "mocopi モーションキャプチャを使ったゲームのベース",
+	"Modules": [
+		{
+			"Name": "MocopiGame",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "LiveLink",
+			"Enabled": true
+		},
+		{
+			"Name": "LiveLinkAnimationCore",
+			"Enabled": true
+		},
+		{
+			"Name": "MocopiLiveLink",
+			"Enabled": true,
+			"MarketplaceURL": "https://github.com/sony/mocopi-receiver-plugin-unrealengine"
+		}
+	]
+}
